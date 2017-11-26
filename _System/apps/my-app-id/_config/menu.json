@@ -1,0 +1,14 @@
+{
+  "menu-my-apps": {
+    "weight": 600000,
+    "title": "Apps"
+  },
+  "menu-my-app": {
+    "parent": "menu-bcam-apps",
+    "weight": 25000,
+    "title": "My App",
+    "attr": {
+      "href": "/Admin/AppLoader.aspx?client_id=my-app-id"
+    }
+  }
+}

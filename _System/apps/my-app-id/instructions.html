@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Solid Company Settings</title>
+<link href="/_System/apps/funapps-klarna/_assets/css/app.css" type="text/css" rel="stylesheet" media="screen" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+    <script type="text/javascript" src="//cdn.worldsecuresystems.com/bcapi/bcapi-0.1.0.min.js"></script>
+    <script type="text/javascript" src="/_System/apps/funapps-klarna/_assets/js/app.js"></script>
+    <meta name="robots" content="noindex">
+</head>
+<body>
+{%include "/_System/apps/funapps-klarna/_data/menu.html"%}
+<div id="container-body">
+	<h1><span>Klarna Integration - Version 1.0</span>    </h1>
+    <h2>Description</h2>
+	<p>Klarna payment integration for Business Catalyst</p>
+<h2>Requirements</h2>
+<ul>
+	<li>A klarna account with merchant ID and shared secret credentials</li>
+	<li>Credentials provided to FunBit and saved on integration server</li>
+</ul>
+<h2>App Settings</h2>
+<h3>Take note of the following settings used by this app:</h3>
+<ul>
+	<li>
+        Country: Norway (NO)
+    </li>
+    <li>
+        Language: Norwegian-Bokmål (NB)
+    </li>
+    <li>
+        Locale: Norwegian Bokmål, Norway (NB_NO)
+    </li>
+    <li>
+        Currency: Norwegian Krone (NOK)
+    </li>
+    <li>
+        Tax Rate: 25 % 
+    </li>
+    <li>
+        Max one discount code per order
+    </li>
+</ul>
+<h2>Instructions</h2>
+<h3>Terminology</h3>
+    <p>When a customer makes a purchase on your store using Klarna a <strong>reservation</strong> is created.<p>
+    <p>This Klarna reservation is saved with the order in your Business Catalyst CRM database</p>
+    <p>When you are ready to ship, you <strong>activate</strong> the reservation</p>
+    <p>Klarna send the customer an <strong>invoice</strong> and send you your money. The original reservation is deleted.</p>
+<h3>Managing Klarna orders</h3>
+    <p>Log in to your Klarna online account to view reservations and invoices</p>
+    <p>Use this app to cancel, activate and refund orders</p>
+    <p><strong>Important!</strong>This app does not make changes to the orders in your CRM database. It only operates on your Klarna Online reservations and invoices.</p>
+    
+</body>
+</html>
